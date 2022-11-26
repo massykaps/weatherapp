@@ -19,16 +19,6 @@ For each day, you can also see more detailed information:
 - Wind Direction
 - Humidity
 
-## Screenshots
-
-### Desktop
-
-![Desktop_Image](Desktop-Weather-App.JPG)
-
-### Mobile
-
-![Mobile_Image](Mobile-Weather-App.JPG)
-
 ## Technologies Used
 
 ### Language
@@ -65,11 +55,7 @@ The page will reload when you make changes.
 
 Launches the test runner for the app, so you can check the current components still work if you wish to make changes.
 
-## If I had more time
-
-- I would have a state to change the background based on the current day's description (default)
-- I would use that state to change the background, based on the description of any day selected for more details
 
 ## Author
 
-- Will Hodgkinson
+- Masiye Kapenda
