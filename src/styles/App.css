@@ -1,0 +1,11 @@
+.weather-app {
+  margin: 0 20px;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .weather-app {
+    margin: 0 20px;
+    display: grid;
+  }
+}

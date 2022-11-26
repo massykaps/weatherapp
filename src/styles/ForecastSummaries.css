@@ -1,0 +1,16 @@
+.forecast-summaries {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forecast-summary__icon {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .forecast-summaries {
+    flex-direction: column;
+  }
+}

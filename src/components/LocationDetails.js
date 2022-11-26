@@ -1,24 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types"
+import "../styles/LocationDetails.css";
 
-function LocationDetails(props) {
-    const { city, country } = props;
-    return <h1>{`${city}, ${country}`}</h1>;
+function LocationDetails({ city, country, errorMessage }) {
+  return errorMessage ? (
+    <h1>{errorMessage}</h1>
+  ) : (
+    <h1 className="location-details">{`${city}, ${country}`}</h1>
+  );
+}
+
+LocationDetails.defaultProps = {
+  errorMessage: "",
 };
-
-function App() {
-    return (
-        <div classname="App">
-            <LocationDetails />
-        </div>
-    );
-};
-
-
-
-export default LocationDetails;
 
 LocationDetails.propTypes = {
-    city: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  errorMessage: PropTypes.string,
 };
+
+export default LocationDetails;
